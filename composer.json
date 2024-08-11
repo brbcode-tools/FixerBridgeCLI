@@ -1,0 +1,35 @@
+{
+  "name": "brbcode-tools/fixerbridge-cli",
+  "description": "FixerBridge CLI",
+  "keywords": ["php", "symfony", "utils", "fixer"],
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "Bruno Garcia Tripoli",
+      "email": "bruno.garcia.tripoli@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "BrbcodeTools\\FixerBridgeCLI\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BrbcodeTools\\FixerBridgeCLI\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "tests": "php vendor/bin/phpunit -c tests/phpunit.xml"
+  },
+  "require": {
+    "php": ">=8.2",
+    "symfony/framework-bundle": "^7.1",
+    "symfony/console": "^7.1",
+    "symfony/yaml": "^7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.3"
+  }
+}
